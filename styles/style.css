@@ -1,1 +1,179 @@
-/*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+:root {
+  --green: #bfdf32;
+  --white: #fff;
+  --grey: #a4a5aa;
+  --light-blue: #e6eff6;
+  --electric: #4abebd;
+  --dark-electric: #2bb3b1;
+  --spacing: 40px;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 400;
+  color: var(--grey);
+}
+
+body {
+  background-color: var(--light-blue);
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+section {
+  width: 100%;
+  min-height: 100vh;
+  padding: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+@media only screen and (max-width: 767px) {
+  .heading {
+    font-size: 1.25rem;
+  }
+}
+
+button {
+  padding: 12px 20px;
+  background-color: var(--green);
+  color: var(--white);
+  font-weight: 700;
+  border-radius: 4px;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+  border: 0;
+  outline: none;
+  font-size: 1.125rem;
+  cursor: pointer;
+}
+
+.subheading {
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+@media only screen and (max-width: 767px) {
+  .subheading {
+    font-size: 1rem;
+  }
+}
+
+p {
+  line-height: 1.5;
+  font-size: 1rem;
+}
+@media only screen and (max-width: 767px) {
+  p {
+    font-size: 0.875rem;
+  }
+}
+p.small {
+  font-size: 0.875rem;
+}
+@media only screen and (max-width: 767px) {
+  p.small {
+    font-size: 0.75rem;
+  }
+}
+p.bold {
+  font-weight: 700;
+}
+
+.card {
+  background-color: var(--white);
+  border-radius: 8px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  max-width: 635px;
+}
+.card-inner {
+  padding: var(--spacing);
+}
+@media only screen and (max-width: 767px) {
+  .card-inner {
+    --spacing: 24px;
+  }
+}
+.card .top-info .heading {
+  color: var(--dark-electric);
+  padding-bottom: 20px;
+}
+@media only screen and (max-width: 767px) {
+  .card .top-info .heading {
+    padding-bottom: 12px;
+  }
+}
+.card .top-info .subheading {
+  color: var(--green);
+  padding-bottom: 10px;
+}
+.card .bottom-info {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+}
+@media only screen and (max-width: 767px) {
+  .card .bottom-info {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+}
+.card .bottom-info h2,
+.card .bottom-info li,
+.card .bottom-info p {
+  color: var(--white);
+}
+.card .bottom-info .subsription {
+  background-color: var(--dark-electric);
+}
+.card .bottom-info .subsription .subheading {
+  padding-bottom: 10px;
+}
+.card .bottom-info .subsription .price {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.card .bottom-info .subsription .price .amount {
+  font-size: 2rem;
+  font-weight: 700;
+  padding-right: 12px;
+}
+.card .bottom-info .subsription .price .text {
+  opacity: 0.7;
+}
+.card .bottom-info .subsription .description {
+  padding-bottom: 26px;
+}
+.card .bottom-info .subsription button {
+  width: 100%;
+}
+.card .bottom-info .why-us {
+  background-color: var(--electric);
+}
+.card .bottom-info .why-us .subheading {
+  padding-bottom: 16px;
+}
+.card .bottom-info .why-us ul li {
+  list-style: none;
+  opacity: 0.7;
+}/*# sourceMappingURL=style.css.map */
